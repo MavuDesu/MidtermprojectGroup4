@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="stylee.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Optional but useful to handle padding and borders */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-style:open-sans;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+</style>
+<body>
+
+    <!-- Custom HR with text -->
+<div class="custom-hr-container">
+    <div class="custom-hr">
+        <p class="homepage">Angeles University Foundation</p>
+    </div>
+</div>
+
+
+
+<div class="full-width-container">
+    <!-- Column 1: Image -->
+    <div class="column1"></div>
+
+    <!-- Column 2: Background color with text -->
+    <div class="column2">
+        <h1>Home page</h1> <br> <br>
+        <p class="description">Our webpage offers a streamlined and visually appealing 
+            platform to explore the portfolios of our three members. With a 
+            minimalist design and clear navigation, visitors can easily access 
+            each individual's work.</p>
+    </div>
+</div>
+
+
+
+<!--Bodyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-->
+
+<div class="image-row">
+    <pre class="prebody">The four-man</pre> 
+    <p> <em>Click through respective profiles to see portfolios</em></p>
+    <div class="image-container">
+        <!-- Column 1 of video -->
+        <div class="image-column">
+            <a href="CVJohn.html" target="_blank"><video class="hover-video" poster="/MIDTERMS/johnjade.jpg" muted loop>
+                <source src="/MIDTERMS/Videos/Cadiz.mp4" type="video/mp4">
+            </video> </a>
+            <p style="text-align: center;" class="portfolio">John Jade Cadiz</p>
+        </div>
+        <!-- Column 2 of video -->
+        <div class="image-column">
+            <a href="CVgalvin.html" target="_blank"><video class="hover-video" poster="/MIDTERMS/Garou.JPG" muted loop>
+                <source src="/MIDTERMS/Videos/Galvin.mp4" type="video/mp4">
+            </video></a>
+            <p style="text-align: center;" class="portfolio">Galvin Venturina</p>
+        </div>
+        <!-- Column 3 (romero) of video -->
+        <div class="image-column">
+            <a href="CVEirish.html" target="_blank"><video class="hover-video" poster="/MIDTERMS/romeropf.jpg" muted loop>
+                <source src="/MIDTERMS/Videos/eirishcutey.mp4" type="video/mp4">
+            </video></a>
+            <p style="text-align: center;" class="portfolio">Galvin Venturina</p>
+        </div>
+        <!-- Column 4 of video -->
+        <div class="image-column">
+            <a href="CVmav.html" target="_blank"><video class="hover-video" poster="/MIDTERMS/Mavs.JPG" muted loop>
+                <source src="/MIDTERMS/Videos/Mavs.mp4" type="video/mp4">
+            </video></a>
+            <p style="text-align: center;" class="portfolio">Maverick Clemente</p>
+        </div>
+        
+    </div>
+</div>
+<!-- Add your JavaScript here -->
+<script>
+    const videos = document.querySelectorAll('.hover-video');
+
+    videos.forEach(video => {
+      video.addEventListener('mouseover', () => {
+        video.volume = 0.5;  // Set volume to 50%
+        video.muted = false; // Unmute video
+        video.play(); //play video
+      });
+
+
+  // Pause video, reset to beginning, and show thumbnail (poster) when hover ends
+      video.addEventListener('mouseout', () => {
+        video.pause();
+        video.currentTime = 0;
+        video.muted = true;  // Mute video when hover ends
+        video.load();   // Reload the poster (thumbnail) image
+      });
+    });
+  </script>
+
+
+
+<!-- New full-width div with larger left text column and right image -->
+<div class="large-image-row">
+    <!-- Text column on the left (larger space) -->
+    <div class="text-column">
+        <p class="h2">Our Credentials</p> <br>
+        <p>Our homepage features a clean and minimalist design with prominent headers 
+        that highlight our credentials. Visually appealing buttons, arranged horizontally, 
+            provide easy access to each of our individual portfolio websites. These buttons are clearly 
+            labeled with our names, ensuring visitors can effortlessly navigate to the portfolio of their choice. 
+            The overall aesthetic is modern and inviting, creating a seamless user experience.</p>
+    </div>
+    
+    <!-- Image column on the right (smaller space) -->
+    <div class="image-column-right">
+        <img src="/MIDTERMS/thorfinn.jpg" alt="Large Right Image">
+    </div>
+</div>
+
+
+
+
+<div class="final-section">
+    <!-- Image columns on the top -->
+    <div class="final-image-container">
+        <div class="final-image-column">
+            <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fgalvinventurina_%2Fprofilecard%2F%3Figsh%3DY2dxOHl3YnNsNTc%253D&h=AT2y5fyyFiLl3PFPTkIK7dYXnRSRBh9l0nuP52-Jd7QGJdPBpbtlqeleKoB-7H8j2fE14VcbPUBZuYOWXCY0IR9UvbJOAw1D63Sd3WKc0hdzh1O9vRhCbwrIVtmdtC85XL-Occ1ZgqOTOAa7uM8ltQ" target="_blank"><img src="/MIDTERMS/mcdogav.JPG" alt="Instagram Image 1"></a>
+        </div>
+        <div class="final-image-column">
+            <a href="https://www.instagram.com/mav_des8/" target="_blank"><img src="/MIDTERMS/igmav.JPG" alt="Instagram Image 2"></a>
+        </div>
+        <div class="final-image-column">
+            <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmightyjuang_%2Fprofilecard%2F%3Figsh%3DMWpzc25heTdmc2kxYg%253D%253D&h=AT2y5fyyFiLl3PFPTkIK7dYXnRSRBh9l0nuP52-Jd7QGJdPBpbtlqeleKoB-7H8j2fE14VcbPUBZuYOWXCY0IR9UvbJOAw1D63Sd3WKc0hdzh1O9vRhCbwrIVtmdtC85XL-Occ1ZgqOTOAa7uM8ltQ" target="_blank"><img src="/MIDTERMS/jadeig.jpg" alt="Instagram Image 3"></a>
+        </div>
+        <div class="final-image-column">
+            <a href="https://www.instagram.com/roshi_akane/profilecard/?igsh=azIxaWMxdDhyMG9h&fbclid=IwZXh0bgNhZW0CMTEAAR2ZxjEuyRBMo4afWtZbaQQvAeQ9voQAWX2J9ZIbpl3GHtn7ak6eDti40p4_aem_Pl7G1ZHO2cnSAZOQw2QJrA" target="_blank"><img src="/MIDTERMS/romeroig.jpg" alt="Instagram Image 4"></a>
+        </div>
+    </div>
+
+    <!-- Marquee text at the bottom -->
+    <div class="final-text">
+        <marquee class="instagram">Follow us on Instagram</marquee>
+    </div>
+</div>
+
+    
+    
+    
+</body>
+</html>

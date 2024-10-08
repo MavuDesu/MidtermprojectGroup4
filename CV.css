@@ -1,0 +1,134 @@
+/* General styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling for name and job title */
+.main-header {
+    text-align: center;
+    padding: 20px;
+    background-color: crimson;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.name-container h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Left section styling */
+.left-section {
+    width: 30%;
+    background-color: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #666;
+    margin-bottom: 20px;
+}
+
+.contact-container, .about-container, .skills-container {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.skills-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Right section styling */
+.right-section {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.heading {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.work-experience-container, .responsibility-container, .tools-container {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Oval-shaped smaller headers with descriptions */
+.additional-info {
+    margin-top: 20px;
+}
+
+.info-header {
+    margin-bottom: 20px;
+}
+
+.oval-header {
+    display: inline-block;
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px; /* Oval shape */
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+/* Tools section styling */
+.tool {
+    margin-bottom: 20px;
+}
+
+.tool h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.tool p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
